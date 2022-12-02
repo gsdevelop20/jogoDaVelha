@@ -17,20 +17,20 @@ html, body{
 
 .contenier{
     border: 5px solid black;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .box{
-    width: 164.6px;
-    height: 164.6px;
+    width: 131.3px;
+    height: 131.3px;
     border: 1px solid rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
