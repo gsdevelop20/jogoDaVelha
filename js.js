@@ -14,6 +14,20 @@ let game =["","","","","","","","",""];
 let simbo = ["X","O"];
 let vez = 1;
 
+
+function velha(){
+    var quant = 0
+    for(var i = 0; i<9; i++){
+        if(game[i] != ""){
+            quant ++
+            
+        }
+
+        
+    }
+    return quant
+}
+
 function win(){
     if (game[0] ==="X"&&game[1]==="X"&&game[2]==="X" || game[0] ==="O"&&game[1]==="O"&&game[2]==="O" ){
         
@@ -46,9 +60,12 @@ function win(){
     }else if(game[2] ==="X"&&game[4]==="X"&&game[6]==="X" || game[2] ==="O"&&game[4]==="O"&&game[6]==="O"){
         w.innerHTML = "Win!!!!"
         return true
-    }else{
+    }else if(velha()===9){
+        w.innerHTML = "Velha!!!"
+    }else {
         return false
     }
+
 }
 
 
